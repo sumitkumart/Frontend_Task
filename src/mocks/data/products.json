@@ -1,0 +1,147 @@
+[
+  {
+    "id": "p-1",
+    "name": "Aurora Desk Lamp",
+    "description": "Adjustable LED desk lamp with wireless charging base and three color temperatures.",
+    "price": 7499,
+    "category": "Home Office",
+    "stock": 42
+  },
+  {
+    "id": "p-2",
+    "name": "Summit Noise-Canceling Headphones",
+    "description": "Wireless over-ear headphones with adaptive noise cancellation and 40-hour battery life.",
+    "price": 20699,
+    "category": "Electronics",
+    "stock": 18
+  },
+  {
+    "id": "p-3",
+    "name": "Evergreen Ceramic Planter",
+    "description": "Self-watering ceramic planter ideal for small indoor plants and herbs.",
+    "price": 2864,
+    "category": "Home & Garden",
+    "stock": 63
+  },
+  {
+    "id": "p-4",
+    "name": "Momentum Smartwatch",
+    "description": "Fitness-focused smartwatch with GPS, heart-rate monitoring, and stainless steel body.",
+    "price": 27399,
+    "category": "Wearables",
+    "stock": 12
+  },
+  {
+    "id": "p-5",
+    "name": "Terrain Trail Shoes",
+    "description": "Lightweight waterproof trail shoes engineered for all-day comfort.",
+    "price": 10799,
+    "category": "Outdoors",
+    "stock": 0
+  },
+  {
+    "id": "p-6",
+    "name": "Cascade Drip Coffee Maker",
+    "description": "Thermal carafe coffee maker with programmable schedule and bloom control.",
+    "price": 13239,
+    "category": "Kitchen",
+    "stock": 28
+  },
+  {
+    "id": "p-7",
+    "name": "Northwind Traveler Backpack",
+    "description": "Carry-on approved travel backpack with 40L capacity and padded laptop sleeve.",
+    "price": 16599,
+    "category": "Travel",
+    "stock": 9
+  },
+  {
+    "id": "p-8",
+    "name": "Canvas Studio Monitor",
+    "description": "27-inch 5K monitor calibrated for creative work with 99% DCI-P3 coverage.",
+    "price": 82917,
+    "category": "Electronics",
+    "stock": 6
+  },
+  {
+    "id": "p-9",
+    "name": "Lumen Fitness Mat",
+    "description": "Non-slip yoga and fitness mat with antimicrobial surface treatment.",
+    "price": 6224,
+    "category": "Wellness",
+    "stock": 55
+  },
+  {
+    "id": "p-10",
+    "name": "Orbit Portable Projector",
+    "description": "Pocket-sized HD projector with auto keystone correction and 4-hour battery.",
+    "price": 37349,
+    "category": "Electronics",
+    "stock": 15
+  },
+  {
+    "id": "p-11",
+    "name": "Harbor Linen Sheet Set",
+    "description": "Breathable stonewashed linen sheet set with OEKO-TEX certification.",
+    "price": 18177,
+    "category": "Home & Garden",
+    "stock": 22
+  },
+  {
+    "id": "p-12",
+    "name": "Pulse Smart Thermostat",
+    "description": "Energy-saving thermostat with remote sensors and adaptive schedules.",
+    "price": 16517,
+    "category": "Smart Home",
+    "stock": 31
+  },
+  {
+    "id": "p-13",
+    "name": "Atlas Mechanical Keyboard",
+    "description": "Hot-swappable mechanical keyboard with customizable RGB lighting.",
+    "price": 14939,
+    "category": "Accessories",
+    "stock": 44
+  },
+  {
+    "id": "p-14",
+    "name": "Horizon Action Camera",
+    "description": "Waterproof 5K action camera with horizon leveling and dual screens.",
+    "price": 31539,
+    "category": "Outdoors",
+    "stock": 11
+  },
+  {
+    "id": "p-15",
+    "name": "Vista Standing Desk",
+    "description": "Electric height-adjustable desk with memory presets and cable management.",
+    "price": 58099,
+    "category": "Home Office",
+    "stock": 5
+  },
+  {
+    "id": "p-16",
+    "name": "Bloom Pour-Over Kit",
+    "description": "Complete pour-over coffee kit with gooseneck kettle and reusable filter.",
+    "price": 9877,
+    "category": "Kitchen",
+    "stock": 70
+  },
+  {
+    "id": "p-17",
+    "name": "Pulse Mini Speaker",
+    "description": "Portable Bluetooth speaker with 360-degree audio and IP67 water resistance.",
+    "price": 8299,
+    "category": "Electronics",
+    "stock": 80
+  },
+  {
+    "id": "p-18",
+    "name": "Glide Roller Suitcase",
+    "description": "Polycarbonate suitcase with silent wheels and TSA-approved lock.",
+    "price": 23987,
+    "category": "Travel",
+    "stock": 17
+  }
+]
+
