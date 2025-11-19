@@ -2,12 +2,28 @@
 
 A modern React application for managing product listings with search, filtering, sorting, and pagination capabilities.
 
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [API Documentation](#api-documentation)
+- [Testing](#testing)
+- [Design Decisions](#design-decisions)
+- [Trade-offs](#trade-offs)
+- [Future Enhancements](#future-enhancements)
+- [Technology Stack](#technology-stack)
+- [Available Scripts](#available-scripts)
+
 ## Prerequisites
 
 - Node.js v22.x (repo ships with `.nvmrc`, run `nvm use`)
 - npm or yarn
 
 ## Getting Started
+
+### Installation
 
 ```bash
 # Use the correct Node.js version
@@ -20,7 +36,11 @@ yarn install
 
 # One-time setup for MSW (if not already done)
 npx msw init public --save
+```
 
+### Development
+
+```bash
 # Start development server
 npm run dev
 # or
@@ -34,29 +54,29 @@ Open `http://localhost:5173` in your browser.
 ## Project Structure
 
 ```
-src
-   components/          # Reusable UI components
-    Toolbar.tsx     # Search, filter, and sort controls
-     ProductCard.tsx # Product card component
-     Pagination.tsx  # Pagination controls
-    ─ Loader.tsx      # Loading spinner
-  ├── pages/              # Page components
-  │   ├── ProductsPage.tsx      # Main product listing page
-  │   └── ProductDetailsPage.tsx # Product detail view
-  ├── hooks/              # Custom React hooks
-  │   └── useProducts.ts # Products data fetching hook
-  ├── mocks/              # MSW mock server
-  │   ├── handlers.ts     # API request handlers
-  │   ├── browser.ts      # Browser worker setup
-  │   ├── server.ts       # Node server setup (for tests)
-  │   └── data/
-  │       └── products.json # Seed data
-  └── App.tsx             # Main app component with routing
+src/
+├── components/          # Reusable UI components
+│   ├── Toolbar.tsx      # Search, filter, and sort controls
+│   ├── ProductCard.tsx  # Product card component
+│   ├── Pagination.tsx   # Pagination controls
+│   └── Loader.tsx       # Loading spinner
+├── pages/               # Page components
+│   ├── ProductsPage.tsx         # Main product listing page
+│   └── ProductDetailsPage.tsx   # Product detail view
+├── hooks/               # Custom React hooks
+│   └── useProducts.ts   # Products data fetching hook
+├── mocks/               # MSW mock server
+│   ├── handlers.ts      # API request handlers
+│   ├── browser.ts       # Browser worker setup
+│   ├── server.ts        # Node server setup (for tests)
+│   └── data/
+│       └── products.json # Seed data
+└── App.tsx              # Main app component with routing
 ```
 
 ## Features
 
-###  Core Requirements
+### Core Requirements
 
 - **Product List**: Paginated list displaying name, price, category, and stock status
 - **Sorting**: Sort by name (A-Z, Z-A) and price (Low-High, High-Low)
@@ -66,7 +86,7 @@ src
 - **States**: Comprehensive handling of loading, empty, and error states
 - **Accessibility**: Full keyboard navigation, ARIA labels, semantic HTML, and focus management
 
-## UI/UX Highlights
+### UI/UX Highlights
 
 - **Modern Design**: Clean, professional interface with gradient backgrounds and smooth animations
 - **Responsive**: Mobile-first design that works seamlessly on all screen sizes
@@ -74,7 +94,7 @@ src
 - **Visual Indicators**: Animated stock status indicators (green for in-stock, red for out-of-stock)
 - **Indian Currency**: All prices displayed in ₹ (INR) with proper formatting
 
-## API (Mocked with MSW)
+## API Documentation
 
 The mock server provides these endpoints:
 
@@ -137,20 +157,28 @@ The toolbar was designed from scratch as a horizontal form with three controls:
 3. **Simple Pagination**: Previous/Next buttons only (no page numbers) to keep UI clean and mobile-friendly
 4. **No Debouncing**: Search updates immediately - could add debouncing for better performance with large datasets
 
-### What We'd Add With More Time
+## Future Enhancements
+
+### High Priority
 
 1. **URL State Management**: Sync filters/search with URL query params for shareable links
 2. **Advanced Pagination**: Page number buttons, jump to page, items per page selector
 3. **Debounced Search**: Delay API calls while user is typing
+
+### Medium Priority
+
 4. **Product Images**: Add image support to product cards
 5. **Bulk Actions**: Select multiple products for batch operations
 6. **Export Functionality**: Export filtered results to CSV/JSON
-7. **More Tests**: 
+7. **Enhanced Testing**:
    - Category filter tests
    - Sorting tests
    - Pagination tests
    - Error state tests
    - Accessibility tests with jest-axe
+
+### Low Priority
+
 8. **Performance Optimizations**:
    - Virtual scrolling for large lists
    - React.memo for expensive components
@@ -168,15 +196,15 @@ The toolbar was designed from scratch as a horizontal form with three controls:
 
 ## Technology Stack
 
-- **React 19** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **React Router** - Client-side routing
-- **MSW** - API mocking for development and testing
-- **Vitest** - Testing framework
-- **Testing Library** - Component testing utilities
+- React 19 - UI library
+- TypeScript - Type safety
+- Vite - Build tool and dev server
+- React Router - Client-side routing
+- MSW - API mocking for development and testing
+- Vitest - Testing framework
+- Testing Library - Component testing utilities
 
-## Scripts
+## Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
@@ -187,4 +215,3 @@ The toolbar was designed from scratch as a horizontal form with three controls:
 ## License
 
 MIT
-"# Frontend_Task" 
